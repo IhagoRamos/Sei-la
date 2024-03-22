@@ -1,0 +1,39 @@
+print("----AGENDA DE CORTES----")
+Agenda da aula:
+    def __init__(self):
+        self.agendamentos = {}
+    def agendar(self, nome, horario, data):
+        if (horário, dados) em self.agendamentos.values():
+            print("Desculpe, esse horário já está ocupado.\nPor favor, escolha outro horário.")
+        outro:
+            self.agendamentos[nome] = (horário, dados)
+            print("Agendamento realizado com sucesso!!")
+
+    def mostra_agenda(self):
+        se não for auto.agendamentos:
+            print("Não há agendamentos.")
+        outro:
+            print("Agendamentos:")
+            para nome, (horário, dados) em self.agendamentos.items():
+                print(f'{nome}: {horário} - {dados}')
+
+agenda = Agenda()
+
+enquanto Verdadeiro:
+    print("\n1. Agenda!!")
+    print("2. Mostrar agenda")
+    print("3. Sair")
+
+    opcao = input("Escolha uma opção:")
+    if opção == "1":
+        nome = input("Digite o nome do cliente: ")
+        horário = input('Digite o horário (formato HH:MM): ')
+        data = input("Digite um dado (formato DD/MM/AAAA): ")
+        agenda.agendar(nome, horário, dados)
+    elif opção == "2":
+        agenda.mostra_agenda()
+    elif opção == "3":
+        print("Saindo do programa...")
+        quebrar
+    outro:
+        print("Opção invalida.\nPor favor, escolha uma opção válida.")
